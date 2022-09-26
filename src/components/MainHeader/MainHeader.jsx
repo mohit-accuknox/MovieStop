@@ -1,6 +1,4 @@
 import React, { Fragment, useContext } from "react";
-import { useState } from "react";
-import { useQuery } from "react-query";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
@@ -17,7 +15,6 @@ const MainHeader = () => {
           spaceBetween={0}
           modules={[Autoplay]}
           slidesPerView={1}
-          onSwiper={(swiper) => swiper}
           autoplay={{ delay: 2000 }}
         >
           {popularMovieData.map((data) => {
