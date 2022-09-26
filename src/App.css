@@ -1,0 +1,7 @@
+.menuList li:hover{
+    border-bottom: 2px solid red;
+}
+
+.menuList li{
+    transition: all 0.2s ease-in;
+}

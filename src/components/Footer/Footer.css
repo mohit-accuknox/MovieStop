@@ -1,0 +1,8 @@
+footer{
+    background: url('/images/footer-bg.jpg');
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
