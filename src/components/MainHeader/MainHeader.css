@@ -7,7 +7,7 @@
     position: relative;
 }
 
-.cardSection img{
+.cardSection .headerImg{
     width: 100%;
     z-index: 6;
     background-position: top;
@@ -80,3 +80,4 @@
         height: 600px;
     }
 }
+

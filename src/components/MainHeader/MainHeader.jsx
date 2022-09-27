@@ -11,32 +11,40 @@ const MainHeader = () => {
 
   return (
     <div>
-        <Swiper
-          spaceBetween={0}
-          modules={[Autoplay]}
-          slidesPerView={1}
-          autoplay={{ delay: 2000 }}
-        >
-          {popularMovieData.map((data) => {
-            return (
-              <SwiperSlide key={data.id}>
-                <section className="cardSection h-[400px]">
-                  <div className="overlay"></div>
+      <Swiper
+        spaceBetween={0}
+        modules={[Autoplay]}
+        slidesPerView={1}
+        autoplay={{ delay: 2000 }}
+      >
+        {popularMovieData.map((data) => {
+          return (
+            <SwiperSlide key={data.id}>
+              <section className="cardSection h-[400px] md:h-[500px] lg:h-[500px] xl:h-[700px]">
+                <div className="overlay"></div>
+                <img
+                  className="headerImg w-full object-cover bg-center"
+                  src={ImgUrl + data.poster_path}
+                  alt=""
+                />
+                <div className="container flex justify-center items-start flex-col md:flex-row lg:w-full lg:items-center">
+                  <div className="flex justify-center items-start h-full flex-col xl:w-[40%] xl:gap-8">
+                    <h2 className="heading xl:text-4xl">{data.title}</h2>
+                    <p className="paragraph xl:text-xl">{data.overview}</p>
+                  </div>
+
                   <img
-                    className="headerImg w-full object-cover bg-center"
+                    className="hidden md:block w-[200px] h-[300px] xl:w-[400px] xl:h-[500px] object-cover rounded-lg shadow-md hover:cursor-pointer transition ease-linear delay-75 hover:scale-[1.02]"
                     src={ImgUrl + data.poster_path}
                     alt=""
                   />
-                  <div className="container">
-                    <h2 className="heading">{data.title}</h2>
-                    <p className="paragraph">{data.overview}</p>
-                  </div>
-                </section>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-        <HomePage />
+                </div>
+              </section>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+      <HomePage />
     </div>
   );
 };
