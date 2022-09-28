@@ -10,6 +10,7 @@ import { Route, Routes } from "react-router-dom";
 import MovieSearch from "./components/SeachMovie/MovieSearch";
 import MovieDetailPage from "./components/MovieDetail/MovieDetailPage";
 import BookmarkSection from "./components/BookMark/BookmarkSection";
+// import TrailerVideo from "./components/TrailerVideo/TrailerVideo";
 
 const queryClient = new QueryClient();
 
