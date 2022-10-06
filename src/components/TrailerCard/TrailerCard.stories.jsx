@@ -13,6 +13,6 @@ export const Primary = Template.bind({});
 Primary.args = {
     trailerData:{
         name: "Honey Singh",
-        key: 'zM6s3JgF9_0',
+        key: "gHzuabZUd6c",
     }
 }
