@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useMutation } from "react-query";
 import { Link } from "react-router-dom";
 
-const MovieSearch = () => {
+const MovieSearch = (searchData) => {
   const {
     trendingMovie,
     inputText,
@@ -50,7 +50,7 @@ const MovieSearch = () => {
             transition={{ duration: 0.7 }}
             type="text"
             onChange={MovieSearchValue}
-            placeholder="Search Movies"
+            placeholder={searchData.placeholder}
             className="bg-black text-white p-2 w-[300px] rounded-[50px] transition ease-in delay-75 focus:outline-none focus:ring focus:ring-red-600"
           />
           <motion.button

@@ -1,0 +1,1 @@
+.homecard{width:100%;display:flex;justify-content:center;align-items:flex-start;flex-direction:column;gap:1rem;transition:all .5s ease}.homecard h2{transition:all .5s ease}.homecard:hover{transform:scale(1.02)}.homecard:hover h2{color:red;font-weight:500}
